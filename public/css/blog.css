@@ -1,0 +1,7 @@
+div#blogContainer {
+  background-image: url(/images/backgrounds/cutcube.png);
+}
+
+div#articles {
+  visibility: hidden;
+}

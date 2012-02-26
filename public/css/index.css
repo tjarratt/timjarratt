@@ -1,0 +1,126 @@
+body {
+  margin: 0px;
+  -webkit-background-size: 100% ;
+  background-attachment: fixed;
+  background-color: #222;
+  background-image: url(/images/backgrounds/menger.jpg);
+  background-size: 100% ;
+  /*font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+}
+
+/* some basics */
+div.clear {
+  clear: both;
+}
+div.scripts {
+  display:none;
+}
+a:visited {
+  color: blue;
+}
+/* hide this input field */
+input.hidden {
+  display:none;
+}
+
+/* left and right flow */
+.leftBlock {
+  width: 300px; float: left
+}
+.rightBlock {
+  width: 300px; float: right
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.centerText {
+  text-align: center;
+}
+
+div#devContainer {
+  background-image: url(/images/smartphone3.png);
+  background-repeat: no-repeat;
+  height: 470px;
+  width: 802;
+}
+div.stacked {
+  float:left;
+  clear:right;
+}
+div.navButton {
+  border-left-style: solid;
+  border-right-style: solid;
+  width: 173px;
+  height: 40px;
+  text-align: center;
+  background-color:dimgray;
+}
+div#links {
+  margin:10px;
+}
+div.links {
+  margin-left: 30px!important;
+}
+div.links a {
+  text-decoration: none;
+}
+a.navLink {
+  text-shadow: none;
+}
+div#bottomNav {
+  position: relative;
+  border-top-style: solid;
+  top: 320px;
+  left: 79px;
+  width: 540px;
+}
+div#devScreen {
+  position: relative;
+  top: 70px;
+  left: 90px;
+}
+#topContainer {
+  background-image: url(/images/backgrounds/menger.jpg);
+  background-size: 100% ;
+  background-repeat: repeat-y;
+  min-width: 800px;
+  overflow: hidden;
+}
+div#mainContainer {
+  -webkit-box-shadow: white 0px -1px 0px, #222 0px 0px 10px;
+  background-color: #EEE;
+  border-bottom-left-radius: 5px 5px;
+  border-bottom-left-radius: 5px 5px;
+  border-bottom-right-radius: 5px 5px;
+  border-bottom-right-radius: 5px 5px;
+  border-top-left-radius: 5px 5px;
+  border-top-left-radius: 5px 5px;
+  border-top-right-radius: 5px 5px;
+  border-top-right-radius: 5px 5px;
+  margin-top: 50px;
+  color: #222;
+  font-size: 15px;
+  line-height: 150%;
+  padding: 20px;
+  padding-bottom: 70px;
+  position: relative;
+  text-shadow: white 0px 1px 0px;
+  width: 750px;
+  z-index: 1;
+}
+#resumeContainer {
+  position: relative;
+  left: 10%;
+}
+#andyContainer {
+  position: absolute;
+  left: 450px;
+  top: 290px;
+}
+
+#andyContainer #trebekImg {
+  height: 20%;
+}
+
+{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }

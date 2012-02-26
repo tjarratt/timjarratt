@@ -1,0 +1,34 @@
+div(id="scripts")
+        link(rel="stylesheet", href="/css/rsvp.css")
+        script
+                head.js("/js/rsvp.js");
+
+div(id="rsvpContainer")
+        div(class="center centerText rsvpBlock")
+                h1 So You Wanna RSVP For This Wedding, eh?
+                p You can do that, in 3 easy steps.
+
+                #preamble
+                        p First let us know if you'll be attending or not.
+                        input(id="attend_button", type="button", value="Totally gonna attend. Wouldn't miss it.")
+                        div(class="clear")
+                        input(id="not_attend_button", type="button", value="Woah, sorry guys. Can't make it.")
+
+                #rsvp_attend(class="hidden")
+                        ul
+                                li Find the unique code on the invitation we sent you.
+                                li Enter that code below.
+                                li (that's it, there is no step three).
+                        input(id="rsvpcode", type="text", value="...(SECRET CODE)...", class="inactive")
+                        div(class="clear")
+                        input(id="rsvpsubmit", type="button", value="Submit")
+
+                #rsvp_no_attend(class="hidden")
+                        div(class="clear")
+                        p We are so sorry that you can't make it.
+                        input(id="nogoname", class="inactive", value="Your Name")
+                        div(class="clear")
+                        input(id="nogosubmit", type="button", value="Submit")
+                        div(id="dialog")
+
+                        p (We lied, there is no step 3).

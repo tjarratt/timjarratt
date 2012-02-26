@@ -1,0 +1,40 @@
+#topContainer {
+  background-size: 50%;
+  background-repeat: repeat-y;
+  background-image: url(/images/backgrounds/yosemite-falls.jpg);
+}
+
+input.inactive {
+  color: grey;
+}
+
+.rsvpBlock ul li {
+  list-style: none;
+}
+
+input {
+  text-align: center;
+}
+
+#rsvpContainer {
+  height: 660px;
+}
+
+.rsvpBlock {
+  width: 550px;
+  height: 250px;
+  background-image: url(/images/white_leather.png);
+  border-radius: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#attend_button {
+  color: #009251;
+}
+
+#not_attend_button {
+  color: #B51F12;
+}
