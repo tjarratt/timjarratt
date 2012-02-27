@@ -47,3 +47,5 @@ function slide_right(element) {
     }
   }.bind(element));
 }
+
+$("#curtainContent").css("visibility", "visible");
