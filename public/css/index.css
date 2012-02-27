@@ -3,7 +3,7 @@ body {
   -webkit-background-size: 100% ;
   background-attachment: fixed;
   background-color: #222;
-  background-image: url(/images/backgrounds/menger.jpg);
+  /* background-image: url(/images/backgrounds/menger.jpg); */
   background-size: 100% ;
   /*font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
 }
@@ -57,13 +57,19 @@ div.navButton {
   background-color:dimgray;
 }
 div#links {
-  margin:10px;
+  margin: 10px;
+  margin-top: 50px;
+  width: 70px;
+  float: left;
 }
 div.links {
   margin-left: 30px!important;
 }
 div.links a {
   text-decoration: none;
+}
+div.links a p {
+  text-align: center;
 }
 a.navLink {
   text-shadow: none;
@@ -81,7 +87,7 @@ div#devScreen {
   left: 90px;
 }
 #topContainer {
-  background-image: url(/images/backgrounds/menger.jpg);
+  /* background-image: url(/images/backgrounds/menger.jpg); */
   background-size: 100% ;
   background-repeat: repeat-y;
   min-width: 800px;
@@ -124,3 +130,51 @@ div#mainContainer {
 }
 
 { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+#curtains {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+#top {
+  width: 100%;
+  height: 500px;
+  z-index: 3;
+  position: absolute;
+}
+
+.curtain_sides {
+  z-index: 0;
+  position: absolute;
+  top: 80px;
+}
+
+.left {
+  margin-left: 28px;
+  left: 0px;
+}
+
+.right {
+  left: 565px;
+}
+
+.middle_layer {
+  z-index: 1;
+}
+
+.bottom {
+  z-index: 2;
+}
+
+#curtainContent {
+  position: absolute;
+  margin-left: 50%;
+  margin-right: 50%;
+  margin-top: 300px;
+}
+
+p#snowmang {
+  text-align: center;
+  font-size: 1000%;
+}

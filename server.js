@@ -4,7 +4,7 @@ try {
       redis = require("redis").createClient(),
 			app = express.createServer(express.compiler({src: __dirname, enable: ["sass"]})),
       fs = require('fs'),
-      markdown = require('markdown').markdown,
+      jade = require('jade'),
       exec = require('child_process').exec;
 
   app.use(express.static(__dirname + "/public/"));
@@ -95,8 +95,7 @@ app.get('/blog/recent', function(req, res) {
       fs.readFile('blog/' + title, function(err, buffer) {
         if (!title || title.length == 0) { expected -= 1; return; }
 
-        console.log("fetched content for " + title);
-        entries.push({title: title, content: markdown.toHTML(buffer.utf8Slice())});
+        entries.push({title: title, content: jade.compile(buffer.utf8Slice(), {})()});
 
         if (entries.length >= expected) {
           res.json(entries);

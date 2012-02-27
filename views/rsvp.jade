@@ -1,7 +1,10 @@
 div(id="scripts")
+        link(rel="stylesheet", href="/css/jquery-ui.css")
         link(rel="stylesheet", href="/css/rsvp.css")
         script
-                head.js("/js/rsvp.js");
+                head.js("/js/jquery.js", "/js/jquery.ui.js", "/js/rsvp.js", function() {
+                                         console.log("omgz");
+                });
 
 div(id="rsvpContainer")
         div(class="center centerText rsvpBlock")

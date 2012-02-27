@@ -1,21 +1,29 @@
 div(id="scripts")
         link(rel="stylesheet", href="/css/blog.css")
         script
-                $(document).ready(function() {
+                head.js("/js/mustache.min.js", function() {
                   $.ajax({
                     type: 'get',
                     url: '/blog/recent',
                     success: function(response) {
-                      var container = $("
+                      var container = $("#blogContainer");
+                      var template = $("script[name=entry]").html();
                       response.forEach(function(entry) {
                         console.log(entry);
+                        var locals = {
+                          title: entry.title,
+                        };
+                        container.append($(Mustache.to_html(template, locals)));
+                        container.children('.blogEntry :last').children('.blogContent').html(entry.content);
                       });
                     }
                   });
                 });
+         script(type = "text/x-mustache-template", name = "entry")
+                  .blogEntry
+                        h3 {{title}}
+                        .blogContent
 
 #blogHeader
         h2 Illmatic Programmatic
 #blogContainer
-        #blogTitle
-        #blogContent

@@ -43,6 +43,7 @@ $.ready((function() {
     $("#preamble").hide();
     $("#rsvp_attend").html("");
     $("#rsvp_no_attend").toggleClass('hidden');
+    $("input#nogoname").focus();
   });
 
   $("input").focus(function() {
