@@ -33,7 +33,8 @@ function pxtoi(element) {
 function slide_left(element) {
   element.animate({left: '-=10'}, 100, "swing", function() {
     if (pxtoi(element) < 10) {
-     element.css('left', '5px');
+      element.stop();
+      element.animate({left: '5px'});
     }
   }.bind(element));
 }
@@ -43,7 +44,8 @@ function slide_right(element) {
     console.log(element.css('left'));
     console.log(element.attr('id'));
     if (pxtoi(element) > 550) {
-     element.css('left', '550px');
+      element.stop();
+      element.animate({left: '550px'});
     }
   }.bind(element));
 }

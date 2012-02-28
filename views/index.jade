@@ -2,40 +2,42 @@ div(id="scripts")
   script
     head.js('/js/index.js');
 div(id="links")
-  div(class="links")
-    a(href="http://github.com/tjarratt")
-      img(src="/images/github.jpg", width="48", height="48")
-      p Github
-  div(class="links")
-    a(href="http://www.linkedin.com/pub/tim-jarratt/5/933/947")
-      img(src="/images/linkedin.jpg", width="48", height="48")
-      p LinkedIn
-  div(class="links")
-    a(href="http://www.twitter.com/Tim_jarratt")
-      img(src="/images/twitter.png", width="48", height="48")
-      p Tweets
-  div(class="links")
-    a(href="http://www.facebook.com/profile.php?id=100001862632067")
-      img(src="/images/facebook.png", width="48", height="48")
-      p facebook
-  div(class="links")
-    a(href="mailto:tjarratt@gmail.com")
-      img(src="/images/gmail.png", width="48", height="48")
-      p Emails
+  div(id="links_inner")
+    div(class="links")
+      a(href="http://github.com/tjarratt")
+        img(src="/images/github.jpg", width="48", height="48")
+        p Github
+    div(class="links")
+      a(href="http://www.linkedin.com/pub/tim-jarratt/5/933/947")
+        img(src="/images/linkedin.jpg", width="48", height="48")
+        p LinkedIn
+    div(class="links")
+      a(href="http://www.twitter.com/Tim_jarratt")
+        img(src="/images/twitter.png", width="48", height="48")
+        p Tweets
+    div(class="links")
+      a(href="http://www.facebook.com/profile.php?id=100001862632067")
+        img(src="/images/facebook.png", width="48", height="48")
+        p facebook
+    div(class="links")
+      a(href="mailto:tjarratt@gmail.com")
+        img(src="/images/gmail.png", width="48", height="48")
+        p Emails
 
 div(id="mainContainer", class="center")
-  h1 Tim Jarratt
-  h2 javascripts, iOS, and more, OH MY!
-  #curtains
-    img(id="top", class="center", src="/images/backgrounds/curtain_top_transparent.png")
+  div(id="main_inner", class="center")
+    h1 Tim Jarratt
+    h2 javascripts, iOS, and more, OH MY!
+    #curtains
+      img(id="top", class="center", src="/images/backgrounds/curtain_top_transparent.png")
 
-    img(id="left", class="curtain_sides center left", src="/images/backgrounds/curtain_left_scaled.png")
-    img(id="left_background", class="curtain_sides left middle_layer", src="/images/backgrounds/curtain_left_scaled.png", style="left: 110px")
-    img(id="left_background2", class="curtain_sides left bottom", src="/images/backgrounds/curtain_left_scaled.png", style="left: 220px")
+      img(id="left", class="curtain_sides center left", src="/images/backgrounds/curtain_left_scaled.png")
+      img(id="left_background", class="curtain_sides left middle_layer", src="/images/backgrounds/curtain_left_scaled.png", style="left: 110px")
+      img(id="left_background2", class="curtain_sides left bottom", src="/images/backgrounds/curtain_left_scaled.png", style="left: 220px")
 
-    img(id="right", class="curtain_sides  right", src="/images/backgrounds/curtain_right_scaled.png")
-    img(id="right_background", class="curtain_sides right middle_layer", src="/images/backgrounds/curtain_right_scaled.png", style="left: 450px")
-    img(id="right_background2", class="curtain_sides right bottom", src="/images/backgrounds/curtain_right_scaled.png", style="left: 355px")
+      img(id="right", class="curtain_sides  right", src="/images/backgrounds/curtain_right_scaled.png")
+      img(id="right_background", class="curtain_sides right middle_layer", src="/images/backgrounds/curtain_right_scaled.png", style="left: 450px")
+      img(id="right_background2", class="curtain_sides right bottom", src="/images/backgrounds/curtain_right_scaled.png", style="left: 355px")
 
-    #curtainContent
-      p(id="snowmang") ☃
+      #curtainContent
+        p(id="snowmang") ☃

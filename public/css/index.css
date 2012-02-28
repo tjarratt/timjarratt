@@ -57,11 +57,23 @@ div.navButton {
   background-color:dimgray;
 }
 div#links {
-  margin: 10px;
   margin-top: 50px;
   width: 70px;
   float: left;
+  padding: 0;
+  margin: 50px -2px 10px 0;
+  clear: none;
+
+  width: 10%;
+  height: 90%;
+  position: relative;
+  float: left;
 }
+
+div#links_inner {
+  width: 75px;
+}
+
 div.links {
   margin-left: 30px!important;
 }
@@ -97,23 +109,29 @@ div#mainContainer {
   -webkit-box-shadow: white 0px -1px 0px, #222 0px 0px 10px;
   background-color: #EEE;
   border-bottom-left-radius: 5px 5px;
-  border-bottom-left-radius: 5px 5px;
-  border-bottom-right-radius: 5px 5px;
   border-bottom-right-radius: 5px 5px;
   border-top-left-radius: 5px 5px;
-  border-top-left-radius: 5px 5px;
-  border-top-right-radius: 5px 5px;
   border-top-right-radius: 5px 5px;
   margin-top: 50px;
   color: #222;
   font-size: 15px;
   line-height: 150%;
-  padding: 20px;
+  padding: 20px 20px 20px 0;
   padding-bottom: 70px;
-  position: relative;
   text-shadow: white 0px 1px 0px;
-  width: 750px;
   z-index: 1;
+
+  float: right;
+  margin-right: 50px;
+  clear: none;
+
+  width: 80%;
+  height: 90%;
+  position: relative;
+  overflow: hidden;
+}
+div#main_inner {
+  padding-left: 10px;
 }
 #resumeContainer {
   position: relative;
@@ -132,9 +150,11 @@ div#mainContainer {
 { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 #curtains {
-  width: 100%;
+  width: 750px;
   height: 400px;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #top {

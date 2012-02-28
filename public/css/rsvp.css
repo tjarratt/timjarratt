@@ -1,3 +1,7 @@
+body {
+  background-image: url(/images/backgrounds/menger.jpg);
+}
+
 #topContainer {
   background-size: 50%;
   background-repeat: repeat-y;
