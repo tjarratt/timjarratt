@@ -21,7 +21,8 @@ input {
 }
 
 #rsvpContainer {
-  height: 660px;
+  height: 666px;
+  margin-top: 50px;
 }
 
 .rsvpBlock {
