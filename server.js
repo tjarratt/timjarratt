@@ -41,7 +41,7 @@ app.get("/resume", function(request, response) {
 });
 
 app.get("/rsvp", function(req, res) {
-  res.render("rsvp.jade", {});
+  res.render("rsvp.jade", {layout: 'layout_base'});
 });
 
 app.get("/wedding", function(req, res) {

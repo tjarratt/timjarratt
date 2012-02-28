@@ -9,13 +9,15 @@ div(id="scripts")
                       var container = $("#blogContainer");
                       var template = $("script[name=entry]").html();
                       response.forEach(function(entry) {
-                        console.log(entry);
                         var locals = {
                           title: entry.title,
                         };
                         container.append($(Mustache.to_html(template, locals)));
                         container.children('.blogEntry :last').children('.blogContent').html(entry.content);
                       });
+
+                      //open the curtains, yo
+                      slide_open();
                     }
                   });
                 });
@@ -26,4 +28,5 @@ div(id="scripts")
 
 #blogHeader
         h2 Illmatic Programmatic
+        h3 (A Blog)
 #blogContainer

@@ -150,7 +150,7 @@ div#main_inner {
 { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 #curtains {
-  width: 750px;
+  width: 900px;
   height: 400px;
   position: relative;
   margin-left: auto;
@@ -171,12 +171,12 @@ div#main_inner {
 }
 
 .left {
-  margin-left: 28px;
+  margin-left: 34px;
   left: 0px;
 }
 
 .right {
-  left: 565px;
+  left: 710px;
 }
 
 .middle_layer {
