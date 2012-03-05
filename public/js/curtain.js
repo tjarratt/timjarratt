@@ -17,11 +17,8 @@ function slide_open() {
 }
 
 $("#curtains img").each(function(index, img) {
-  console.log(index, img);
   img.onMouseDown = function(e) {
-    console.log(e);
     e.preventDefault();
-    return false;
   };
   img.onmousedown = img.onMouseDown;
 });
