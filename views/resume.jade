@@ -1,2 +1,9 @@
+div(id="scripts")
+    script
+      head.js("/js/jquery.js", '/js/curtain.js', function() {
+        slide_open();
+      });
+    link(rel="stylesheet", href="/css/resume.css")
+
 #resumeContainer
-	embed(src="public/tjarratt_resume.pdf", width="1130", height="725")
+    embed(src="public/tjarratt_resume.pdf", width="630", height="725")
