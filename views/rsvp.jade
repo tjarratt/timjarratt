@@ -2,7 +2,7 @@ div(id="scripts")
         link(rel="stylesheet", href="/css/jquery-ui.css")
         link(rel="stylesheet", href="/css/rsvp.css")
         script
-                head.js("/js/rsvp.js");
+                head.js("/js/jquery.js", '/js/jquery.ui.js', "/js/rsvp.js");
 
 div(id="rsvpContainer")
         div(class="center centerText rsvpBlock")
@@ -30,6 +30,8 @@ div(id="rsvpContainer")
                         input(id="nogoname", class="inactive", value="Your Name")
                         div(class="clear")
                         input(id="nogosubmit", type="button", value="Submit")
-                        div(id="dialog")
-
                         p (We lied, there is no step 3).
+        div(id="dialog")
+        div(class="registry center centerText")
+                h2 Looking for our registry?
+                a(href="http://www.amazon.com/gp/registry/wedding/1JI4GIX8UWE6N") It's on Amazon.com

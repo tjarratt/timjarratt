@@ -6,17 +6,31 @@ $.ready((function() {
     }[id];
   }
 
+  function failure_handler() {
+    $("div#dialog").dialog({
+      modal: true,
+      resizable: false,
+      title: 'Whoops!'
+    }).html("<p>Sorry, either you typed that wrong, or something's borked on the backend.</p><p>You can either try again, or email me at tjarratt@gmail.com</p>").show();;
+  }
+
   function submit_rsvp() {
     $.ajax({
       type: 'post',
       url: '/submit/rsvp/' + $("input#rsvpcode").val(),
       success: function(response) {
-        $("div#dialog").dialog({
-          modal: true,
-          resizable: false,
-          title: "Great!"
-        }).html("Thanks for rsvping. We'll see you there!");
-      }
+        if (response == true) {
+          $("div#dialog").dialog({
+            modal: true,
+            resizable: false,
+            title: "Great!"
+          }).html("Thanks for rsvping. We'll see you there!");
+        }
+        else {
+          failure_handler();
+        }
+      },
+      failure: failure_handler
     });
   }
 
@@ -25,18 +39,26 @@ $.ready((function() {
       type: 'post',
       url: '/submit/nogo/' + $("input#nogoname").val(),
       success: function(response) {
-        $("div#dialog").dialog({
-          modal: true,
-          resizable: false,
-          title: "Oh noes!"
-        }).html("Sorry you can't make it. We look forward to seeing you soon anyway!");
-      }
+        if (response != true) {
+          $("div#dialog").dialog({
+            modal: true,
+            resizable: false,
+            title: "Oh noes!"
+          }).html("Sorry you can't make it. We look forward to seeing you soon anyway!");
+
+        }
+        else {
+          failure_handler();
+        }
+      },
+      failure: failure_handler
     });
   }
 
   $("input#attend_button").click(function() {
     $("#preamble").hide();
     $("#rsvp_attend").toggleClass('hidden');
+    $("div.rsvpBlock").css("height", "230px");
   });
 
   $("input#not_attend_button").click(function() {
@@ -44,6 +66,7 @@ $.ready((function() {
     $("#rsvp_attend").html("");
     $("#rsvp_no_attend").toggleClass('hidden');
     $("input#nogoname").focus();
+    $("div.rsvpBlock").css("height", "220px");
   });
 
   $("input").focus(function() {
@@ -58,9 +81,6 @@ $.ready((function() {
   $("input#rsvpcode").on("keypress", function(e) {
     if (e.keyCode == 13) {
       submit_rsvp();
-    }
-    else {
-      console.log(e.keyCode);
     }
   });
   $("input#rsvpsubmit").on("click", submit_rsvp);
