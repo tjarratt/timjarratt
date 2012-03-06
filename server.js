@@ -106,7 +106,8 @@ var rsvp_codes = {
   "3df67b" : "Moshe + Jennifer Zadka, 1025 Foster City Blvd., Apt. C, Foster City, C",
   "ffe504" : "Dale Taylor,1298 Haight St Apt 10, San Francisco, C",
   "0e9815" : "John Egan,2 Townsend St #3-107,San Francisco CA 94107",
-  "564069" : "Bonnie Sassor,12665 10th St S,Afton MN 55001,"
+  "564069" : "Bonnie Sassor,12665 10th St S,Afton MN 55001,",
+  "b10c70" : "Kim and John"
 };
 
 app.post("/submit/rsvp/:code", function(req, res) {
