@@ -48,8 +48,38 @@ app.get("/wedding", function(req, res) {
   res.redirect("http://illegaltoaster.com/rsvp");
 });
 
+app.get("/style_guide", function(req, res) {
+  res.render("style_guide.jade", {layout: 'layout_base'});
+});
+
+app.get("/schedule", function(req, res) {
+  res.render("schedule.jade", {layout: 'layout_base'});
+});
+
+app.get("/maps", function(req, res) {
+  res.render("maps.jade", {layout: 'layout_base'});
+});
+
+app.get("/food", function(req, res) {
+  res.render("food.jade", {layout: 'layout_base'});
+});
+
+app.get("/accommodations", function(req, res) {
+  res.render("accommodations.jade", {layout: 'layout_base'});
+});
+
+app.get("/menu", function(req, res) {
+  res.render("menu.jade", {layout: 'layout_base'});
+});
+
 app.get("/uptime", function(req, res) {
   redis.hgetall("rsvp", function(e, result) {
+    res.json(true);
+  });
+});
+
+app.get("/honey", function(req, res) {
+  redis.hgetall("honey", function(e, result) {
     res.json(true);
   });
 });

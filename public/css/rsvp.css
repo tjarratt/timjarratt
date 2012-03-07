@@ -1,10 +1,5 @@
 body {
-  background-image: url(/images/backgrounds/menger.jpg);
-}
-
-#topContainer {
-  background-size: 50%;
-  background-image: url(/images/backgrounds/yosemite-falls.jpg);
+  background-image: url(/images/backgrounds/yosemite-valley-meadow.jpg);
 }
 
 input.inactive {
@@ -15,17 +10,60 @@ input.inactive {
   list-style: none;
 }
 
+.textblock {
+	width: 75%;
+	height: auto;
+	background-color: #7D985B;
+	border-radius: 10px;
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+#guide_container {
+	height: 825px;
+}
+#party_guide {
+	height: 1070px;
+}
+
+.guide_women{
+	width: 300px;
+	height: auto;
+	padding: 5px;
+	float: left;
+}
+
+.guide_men{
+	width: 300px;
+	height: auto;
+	padding: 5px;
+	float: left;
+}
+
+img.guide {
+	height: 250px !important;
+	width: auto !important;
+	padding:5px;
+}
+
+.textblock ul li {
+  text-align: left;
+  margin-left: 25%;
+  margin-right: 10%;
+}
+
 input {
   text-align: center;
 }
 
 #rsvpContainer {
-  height: 666px;
   margin-top: 50px;
+  height: 600px;
+  overflow: auto;
 }
 
 .rsvpBlock {
-  width: 550px;
+  width: 540px;
   height: 200px;
   background-color: #7D985B;
   border-radius: 10px;
@@ -54,5 +92,41 @@ input {
 }
 
 a {
-  color: blue !important;
+  color: #84CAE8 !important;
 }
+
+/* Navigation */
+
+nav {
+  width: 80%;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 0px;
+  background-color: #7D985B;
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a {
+  padding: 0 5px;
+}
+
+nav ul li a:visited {
+  color: #09c;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+}
+
