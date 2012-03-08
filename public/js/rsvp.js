@@ -1,4 +1,12 @@
 $.ready((function() {
+  var container = $("div#rsvpContainer")
+  var resize = function() {
+    var height = $(window).height() - 83;
+	container.css("height", (height < 410) ? 410 : height );
+  };
+  $(window).resize(resize);
+  resize();
+
   function default_text_for_input(id) {
     return {
       rsvpcode: "...(SECRET CODE)...",
