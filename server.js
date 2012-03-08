@@ -72,14 +72,12 @@ app.get("/menu", function(req, res) {
   res.render("menu.jade", {layout: 'layout_base'});
 });
 
-app.get("/uptime", function(req, res) {
-  redis.hgetall("rsvp", function(e, result) {
-    res.json(true);
-  });
+app.get("/honey", function(req, res) {
+  res.render("honey.jade", {layout: 'layout_base'});
 });
 
-app.get("/honey", function(req, res) {
-  redis.hgetall("honey", function(e, result) {
+app.get("/uptime", function(req, res) {
+  redis.hgetall("rsvp", function(e, result) {
     res.json(true);
   });
 });

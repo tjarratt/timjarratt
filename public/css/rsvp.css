@@ -13,28 +13,31 @@ input.inactive {
 .textblock {
 	width: 75%;
 	height: auto;
-	background-color: #7D985B;
+	background-color: #DFEBC0;
 	border-radius: 10px;
 	padding: 5px;
 	margin-bottom: 20px;
 }
 
 #guide_container {
-	height: 825px;
+	height: 550px;
+
 }
 #party_guide {
-	height: 1070px;
+	height: 825px;
 }
 
-.guide_women{
-	width: 300px;
+div.guide_women{
+	text-align: center;
+	width: 480px;
 	height: auto;
 	padding: 5px;
 	float: left;
 }
 
 .guide_men{
-	width: 300px;
+	text-align: center;
+	width: 480px;
 	height: auto;
 	padding: 5px;
 	float: left;
@@ -49,7 +52,7 @@ img.guide {
 .textblock ul li {
   text-align: left;
   margin-left: 25%;
-  margin-right: 10%;
+  margin-right: -10%;
 }
 
 input {
@@ -65,7 +68,7 @@ input {
 .rsvpBlock {
   width: 540px;
   height: 200px;
-  background-color: #7D985B;
+  background-color: #DFEBC0;
   border-radius: 10px;
   padding: 5px;
 }
@@ -85,14 +88,26 @@ input {
 
 .registry {
   width: 550px;
-  background-color: #7D985B;
+  background-color: #DFEBC0;
   border-radius: 10px;
   margin-top: 100px;
   padding: 5px;
 }
 
+.donates {
+  margin: 0% 8% 0% 20%; /*Top, right, bottom, left*/
+
+}
+
+.donates ul li {
+  list-style-type: none !important;
+  display: inline-block !important;
+  padding: 0 !important;
+  margin: 4px;
+}
+
 a {
-  color: #84CAE8 !important;
+  color: #0A4A33 !important;
 }
 
 /* Navigation */
@@ -102,7 +117,7 @@ nav {
   border-radius: 10px;
   margin-top: 10px;
   padding: 0px;
-  background-color: #7D985B;
+  background-color: #DFEBC0;
   padding: 0 0.7em;
   white-space: nowrap;
 }
@@ -119,11 +134,11 @@ nav ul li {
 }
 
 nav ul li a {
-  padding: 0 5px;
+  padding: 3px 2px;
 }
 
 nav ul li a:visited {
-  color: #09c;
+  color: #5A8546;
 }
 
 nav ul li a:hover {
