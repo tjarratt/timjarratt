@@ -108,6 +108,7 @@ input {
 
 a {
   color: #0A4A33 !important;
+  text-decoration: underline;
 }
 
 /* Navigation */
@@ -135,6 +136,7 @@ nav ul li {
 
 nav ul li a {
   padding: 3px 2px;
+  text-decoration: none;
 }
 
 nav ul li a:visited {
