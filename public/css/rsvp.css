@@ -1,10 +1,5 @@
 body {
-  background-image: url(/images/backgrounds/menger.jpg);
-}
-
-#topContainer {
-  background-size: 50%;
-  background-image: url(/images/backgrounds/yosemite-falls.jpg);
+  background-image: url(/images/backgrounds/yosemite-valley-meadow.jpg);
 }
 
 input.inactive {
@@ -15,19 +10,65 @@ input.inactive {
   list-style: none;
 }
 
+.textblock {
+	width: 75%;
+	height: auto;
+	background-color: #DFEBC0;
+	border-radius: 10px;
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+#guide_container {
+	height: 550px;
+
+}
+#party_guide {
+	height: 825px;
+}
+
+div.guide_women{
+	text-align: center;
+	width: 480px;
+	height: auto;
+	padding: 5px;
+	float: left;
+}
+
+.guide_men{
+	text-align: center;
+	width: 480px;
+	height: auto;
+	padding: 5px;
+	float: left;
+}
+
+img.guide {
+	height: 250px !important;
+	width: auto !important;
+	padding:5px;
+}
+
+.textblock ul li {
+  text-align: left;
+  margin-left: 25%;
+  margin-right: -10%;
+}
+
 input {
   text-align: center;
 }
 
 #rsvpContainer {
-  height: 666px;
   margin-top: 50px;
+  height: 600px;
+  overflow: auto;
 }
 
 .rsvpBlock {
-  width: 550px;
+  width: 540px;
   height: 200px;
-  background-color: #7D985B;
+  background-color: #DFEBC0;
   border-radius: 10px;
   padding: 5px;
 }
@@ -47,12 +88,60 @@ input {
 
 .registry {
   width: 550px;
-  background-color: #7D985B;
+  background-color: #DFEBC0;
   border-radius: 10px;
   margin-top: 100px;
   padding: 5px;
 }
 
-a {
-  color: blue !important;
+.donates {
+  margin: 0% 8% 0% 20%; /*Top, right, bottom, left*/
+
 }
+
+.donates ul li {
+  list-style-type: none !important;
+  display: inline-block !important;
+  padding: 0 !important;
+  margin: 4px;
+}
+
+a {
+  color: #0A4A33 !important;
+}
+
+/* Navigation */
+
+nav {
+  width: 80%;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 0px;
+  background-color: #DFEBC0;
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a {
+  padding: 3px 2px;
+}
+
+nav ul li a:visited {
+  color: #5A8546;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+}
+
