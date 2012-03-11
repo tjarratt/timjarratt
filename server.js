@@ -40,40 +40,14 @@ app.get("/resume", function(request, response) {
   response.render("resume.jade", {locals: {time: now.getTime()}});
 });
 
-app.get("/rsvp", function(req, res) {
-  res.render("rsvp.jade", {layout: 'layout_base'});
-});
-
 app.get("/wedding", function(req, res) {
   res.redirect("http://illegaltoaster.com/rsvp");
 });
 
-app.get("/style_guide", function(req, res) {
-  res.render("style_guide.jade", {layout: 'layout_base'});
-});
-
-app.get("/schedule", function(req, res) {
-  res.render("schedule.jade", {layout: 'layout_base'});
-});
-
-app.get("/maps", function(req, res) {
-  res.render("maps.jade", {layout: 'layout_base'});
-});
-
-app.get("/food", function(req, res) {
-  res.render("food.jade", {layout: 'layout_base'});
-});
-
-app.get("/accommodations", function(req, res) {
-  res.render("accommodations.jade", {layout: 'layout_base'});
-});
-
-app.get("/menu", function(req, res) {
-  res.render("menu.jade", {layout: 'layout_base'});
-});
-
-app.get("/honey", function(req, res) {
-  res.render("honey.jade", {layout: 'layout_base'});
+['rsvp', 'style_guide', 'schedule', 'maps', 'food', 'accommodations', 'menu', 'honey'].forEach(function(page) {
+  app.get("/" + page, function(req, res) {
+    res.render(page + ".jade", {layout: 'layout_base'});
+  });
 });
 
 app.get("/uptime", function(req, res) {
