@@ -112,6 +112,20 @@ var rsvp_codes = {
   "b10c70" : "Kim and John"
 };
 
+app.get('/secret/rsvp', function(req, res) {
+  var is_coming = [];
+  var codes = Object.keys(rsvp_codes);
+  codes.forEach(function(code) {
+    console.log("getting " + code + " on rsvp hash");
+    redis.hget('rsvp', code, function(e, result) {
+      if (result != null) { is_coming.push(rsvp_codes[code]); }
+      if (code == codes[codes.length - 1]) {
+        res.render('secret_rsvp', {layout: 'layout_empty', rsvp: is_coming});
+      }
+    });
+  });
+});
+
 app.post("/submit/rsvp/:code", function(req, res) {
   try {
     if (req.params.code in rsvp_codes) {
