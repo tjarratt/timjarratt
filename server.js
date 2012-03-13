@@ -112,6 +112,12 @@ var rsvp_codes = {
   "b10c70" : "Kim and John"
 };
 
+function handle_stdout(err, stdout, stderr) {
+	console.log(err);
+    console.log(stdout);
+    console.log(stderr);
+}
+
 app.get('/secret/rsvp', function(req, res) {
   var is_coming = [];
   var codes = Object.keys(rsvp_codes);
@@ -133,7 +139,7 @@ app.post("/submit/rsvp/:code", function(req, res) {
       store_response("rsvp", req.params.code);
       res.json(true, 200);
 
-      exec('/usr/local/rvm/bin/ruby-1.9.2-p180 ./twilio-rsvp.rb ' + rsvp_codes[req.params.code].split(',')[0]);
+      exec('/usr/local/rvm/bin/ruby-1.9.2-p180 ./twilio-rsvp.rb ' + rsvp_codes[req.params.code].split(',')[0], handle_stdout);
     }
     else {
       res.json(false);
