@@ -133,7 +133,7 @@ app.post("/submit/rsvp/:code", function(req, res) {
       store_response("rsvp", req.params.code);
       res.json(true, 200);
 
-      exec('./twilio-rsvp.rb ' + rsvp_codes[req.params.code].split(',')[0]);
+      exec('/usr/local/rvm/bin/ruby-1.9.2-p180 ./twilio-rsvp.rb ' + rsvp_codes[req.params.code].split(',')[0]);
     }
     else {
       res.json(false);
