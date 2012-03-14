@@ -1,5 +1,5 @@
 $.ready((function() {
-  var container = $("div#rsvpContainer")
+  var container = $("div#rsvpContainer");
   var resize = function() {
     var height = $(window).height() - 83;
 	container.css("height", (height < 410) ? 410 : height );
@@ -16,9 +16,9 @@ $.ready((function() {
 
   function failure_handler() {
     $("div#dialog").dialog({
-      modal: true,
       resizable: false,
-      title: 'Whoops!'
+      title: 'Whoops!',
+      buttons: { Ok: function() { $(this).dialog('close'); }}
     }).html("<p>Sorry, either you typed that wrong, or something's borked on the backend.</p><p>You can either try again, or email me at tjarratt@gmail.com</p>").show();;
   }
 
@@ -29,9 +29,9 @@ $.ready((function() {
       success: function(response) {
         if (response == true) {
           $("div#dialog").dialog({
-            modal: true,
             resizable: false,
-            title: "Great!"
+            title: "Great!",
+            buttons: { Ok: function() { $(this).dialog('close'); }}
           }).html("Thanks for rsvping. We'll see you there!");
         }
         else {
@@ -49,9 +49,9 @@ $.ready((function() {
       success: function(response) {
         if (response != true) {
           $("div#dialog").dialog({
-            modal: true,
             resizable: false,
-            title: "Oh noes!"
+            title: "Oh noes!",
+            buttons: { Ok: function() { $(this).dialog('close'); }}
           }).html("Sorry you can't make it. We look forward to seeing you soon anyway!");
 
         }
