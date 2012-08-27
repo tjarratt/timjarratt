@@ -37,7 +37,7 @@ app.get("/andy", function(req, res) {
 
 app.get("/resume", function(request, response) {
   var now = new Date();
-  response.render("resume.jade", {locals: {time: now.getTime()}});
+  response.render("resume.jade", {layout: 'layout_base'});
 });
 
 app.get("/wedding", function(req, res) {
@@ -46,7 +46,7 @@ app.get("/wedding", function(req, res) {
 
 ['rsvp', 'style_guide', 'schedule', 'maps', 'food', 'accommodations', 'menu', 'honey'].forEach(function(page) {
   app.get("/" + page, function(req, res) {
-    res.render(page + ".jade", {layout: 'layout_base'});
+    res.render(page + ".jade", {layout: 'layout_wedding'});
   });
 });
 

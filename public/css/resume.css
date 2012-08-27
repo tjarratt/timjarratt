@@ -1,4 +1,84 @@
-div#resumeContainer {
-  left: -290px;
-  top: -200px;
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #DEDEDE;
+}
+.wide {
+  padding-left: 5px;
+  padding-top: 16px;
+  width: 63%;
+  display: inline-block;
+  zoom: 1;
+  vertical-align: middle;
+}
+
+#name {
+  float: left;
+  width: 80%;
+}
+#contact_info {
+  padding-top: 16px;
+  float: left;
+  width: 10x%;
+}
+
+.container {
+  width: 100%;
+  min-height:100px;
+  float: left;
+}
+#contact {
+  background: rgb(165,165,165);
+  background: -webkit-gradient(
+    linear,
+    left top, right bottom,
+    color-stop(50%, #CACACA),
+    color-stop(66%, #A0A0A0),
+    color-stop(100%, #999999));
+}
+
+#work {
+  background: rgb(144, 193, 245);
+  background-image:-webkit-gradient(
+    linear,left top, right bottom,
+    color-stop(50%, #90C1F5),
+    color-stop(100%, #90C1F5),
+    color-stop(10%, #CBE0F7));
+}
+
+#projects {
+  background: rgb(203, 238, 247);
+  background-image:-webkit-gradient(
+    linear,
+    left top, right bottom,
+    color-stop(50%, #CBEEF7),
+    color-stop(100%, #CBEEF7),
+    color-stop(10% #A6E6F7));
+}
+
+#interests {
+  /* 166, 185, 247 to 205, 215, 250 */
+  background: rgb(166, 185, 247);
+  background-image:-webkit-gradient(
+    linear,
+    left top, right bottom,
+    color-stop(50%, #A6B9F7),
+    color-stop(90%, #A6B9F7),
+    color-stop(10%, #CDD7FA)
+  )
+}
+
+ul {
+  margin-top: 0px;
+  list-style: none;
+}
+
+.aligned {
+  text-align: center;
+  padding-left: 5px;
+  width: 33%;
+
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: middle;
 }

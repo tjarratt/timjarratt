@@ -1,9 +1,92 @@
-div(id="scripts")
-    script
-      head.js("/js/jquery.js", '/js/curtain.js', function() {
-        slide_open();
-      });
-    link(rel="stylesheet", href="/css/resume.css")
+link(rel="stylesheet", href="/css/resume.css")
+div(id="contact", class="container")
+  div(class="wide", id="name")
+    h1 Tim Jarratt
 
-#resumeContainer
-    embed(src="public/tjarratt_resume.pdf", width="630", height="725")
+  div(id="contact_info")
+    ul
+      li
+        a(href="mailto:tjarratt@gmail.com") tjarratt@gmail.com
+      li
+        a(href="http://twitter.com/#!/tim_jarratt") @tim_jarratt
+      li
+        a(href="http://github.com/tjarratt") github.com/tjarratt
+      li 415-860-8430
+
+div(id="work", class="container")
+
+  div(class="aligned")
+    h2 Software Engineer
+    h3 (Generalist)
+
+  div(class="wide")
+    label(for="nearbuy") Engineer @ Nearbuy Systems
+    ul(name="nearbuy")
+      li Designed responsive Rails and Ember.js-based Analytics web app
+      li Built packet capture and radius clients in node.js
+      li Migrated database from postgresql to Cassandra
+      li Researched, implemented experimental people-tracking vision systems in C++
+
+    label(for="apple2") Automation Engineer @ Apple
+    ul(name="apple2")
+      li Wrote automated tests for a sproutcore web app, Remote Desktop, Screen Sharing
+      li Built Continuous Integration server for catching daily regressions
+
+    label(for="karma") Engineer @ Credit Karma
+    ul(name="karma")
+      li designed, built, tested and integrated a JSON-rpc API with existing website
+      li built a webapp for CreditKarma that launched in PayPal's app store
+      li designed an Apple Push Notification server in node.js (spare-time project)
+
+    label(for="apple1") QA Automation Engineer @ Apple
+    ul(name="apple1")
+      li implemented client/server automation for web apps in OS X Server
+      li maintained production level wikis for corporate employees
+      li investigated performance issues and memory leaks
+
+
+    label(for="education")Education
+    ul(name="education")
+      li UC Davis 2002-2007
+      li C.S. and Mathematics
+
+div(id="projects", class="container")
+  div(class="aligned")
+    h2 Feats of Strength
+    h3 (past/current projects)
+
+  div(class="wide")
+    label(for="node") Node.js `say` webapp
+    ul(name="node")
+      li Built a node-js backed webapp interface to the OS X /usr/bin/say at the 2010 node.js camp
+      li Presented the app onstage at the end of the day
+      li Successfully prevented other conference attendees from running arbitrary shellscript on my development machine
+
+    label(for="usb") OS X USB Panic Button driver
+    ul(name="usb")
+      li Wrote a userspace usb driver in Obj-C for a 'panic button' (http://amzn.to/Ppbx7J)
+      li Uses CFRunLoop, dispatch_async to minimize system resources used
+      li Leverages NSSpeechSynthesizer, AppleScript to run events on button press
+      li Currently used to push new code to dozens of production machines
+
+    label(for="go")Game Design
+    ul
+      li (work in progress) Web and OS X apps for playing games of Go, backed by AWS
+      li Built a centipede-like game on top of an indoor Location Based Service
+      li Built several prototypes for iOS games at SF iOS developer meetup groups
+
+div(id="interests", class="container")
+  div(class="aligned")
+    h2 Merry Maker
+
+  div(class="wide")
+    label(for="biking")Biking
+    ul(name="biking")
+      li Biked SF to Menlo Park for Bike2Work two consecutive years
+      li Averaged ~11 miles a day 2011, 2012
+      li ~3000 total miles biked in 2011
+
+    label(for="beer")Beer
+    ul
+      li Brewed 5 gallons of beer in 2012
+      li Currently creating my own whole-grain Kolsch recipe
