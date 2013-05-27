@@ -1,0 +1,106 @@
+body {
+  margin: 0px;
+  background-attachment: fixed;
+  background-color: #222;
+  background-size: 100% ;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* some basics */
+div.clear {
+  clear: both;
+}
+div.scripts {
+  display:none;
+}
+a:visited {
+  color: blue;
+}
+
+div#sidebar {
+  width: 100px;
+  float: left;
+  margin: 10px;
+  clear: none;
+
+  padding: 10px 2px 10px 2px;
+  height: 90%;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.199219) 0px 1px 1px;
+
+  background: white;
+  background: linear-gradient(bottom, #AAA, #EEE);
+  background: -moz-linear-gradient(bottom, #AAA, #EEE);
+  background: -webkit-linear-gradient(bottom, #AAA, #EEE);
+  background: -webkit-gradient(linear, top, left, bottom, from(#AAA), to(#EEE));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#AAA',EndColorStr='#EEE');
+}
+
+div#sidebar a {
+  color: black;
+}
+
+div.links {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #7A7A7A;
+  width: 80%;
+  padding-top: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  border-bottom-left-radius: 5px 5px;
+  border-bottom-right-radius: 5px 5px;
+  border-top-left-radius: 5px 5px;
+  border-top-right-radius: 5px 5px;
+
+  background-color: #CeCeCe;
+  background-image: -webkit-linear-gradient(top, #CeCeCe, #858585);
+  background-image:    -moz-linear-gradient(top, #CeCeCe, #858585);
+  background-image:      -o-linear-gradient(top, #CeCeCe, #858585);
+}
+
+div.links img {
+  width: 48px;
+  height: 48px;
+  background: #DFDFDF;
+}
+
+div.links a {
+  text-decoration: none;
+}
+div.links a p {
+  text-align: center;
+}
+
+#resumeContainer {
+  position: relative;
+  left: 10%;
+}
+
+.rounded {
+  border-bottom-left-radius: 5px 5px;
+  border-bottom-right-radius: 5px 5px;
+  border-top-left-radius: 5px 5px;
+  border-top-right-radius: 5px 5px;
+}
+
+#main {
+  background-color: #C5C5C5;
+  float: left;
+  margin-top: 10px;
+  padding: 10px;
+  width: 80%;
+  min-width: 300px;
+}
+
+ul#top_menu {
+  padding: 0px;
+}
+
+ul#top_menu li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 15px;
+}
