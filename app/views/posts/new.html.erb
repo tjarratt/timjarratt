@@ -1,0 +1,24 @@
+<h1>New Post</h1>
+<%= form_for @post, :url => {:action => 'create'} do |f| %>
+<div>
+  <%= f.label :title, 'title' %>
+  <% f.text_field :title %>
+</div>
+
+<div>
+  <%= f.label :body, 'body' %>
+  <%= f.text_area :body %>
+</div>
+
+<div>
+  <%= f.label :created_at 'created_at' %>
+  <%= f.text_field :created_at %>
+</div>
+
+<div>
+  <%= f.label :published_at 'published_at' %>
+  <%= f.text_field :published_at %>
+</div>
+
+<%= f.submit 'Create post' %>
+<% end %>
