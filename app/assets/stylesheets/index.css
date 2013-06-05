@@ -104,3 +104,10 @@ ul#top_menu li {
   list-style-type: none;
   padding-right: 15px;
 }
+
+div.container {
+  border: 1px solid #8A8A8A;
+  padding: 10px;
+  margin: 10px;
+  width: 650px;
+}
